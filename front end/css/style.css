@@ -1,0 +1,236 @@
+/* ==========================================================================
+   ESTILOS GERAIS E DESIGN SYSTEM (WCAG 2.1 AAA COMPLIANCE)
+   ========================================================================== */
+:root {
+  --bg-primary: #f4f7f6;
+  --bg-card: #ffffff;
+  --text-main: #1a252c;
+  --primary-color: #0056b3;
+  --primary-hover: #003d80;
+  --accent-color: #28a745;
+  --border-color: #cccccc;
+  --focus-ring: #ffbf47;
+  --font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Tema de Alto Contraste (RNF01) */
+body.high-contrast {
+  --bg-primary: #000000;
+  --bg-card: #121212;
+  --text-main: #ffffff;
+  --primary-color: #ffff00;
+  --primary-hover: #e6e600;
+  --accent-color: #00ffcc;
+  --border-color: #ffffff;
+  --focus-ring: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Foco acessível visível via teclado */
+*:focus-visible {
+  outline: 4px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   BARRA DE ACESSIBILIDADE GLOBAL
+   ========================================================================== */
+.accessibility-bar {
+  background-color: #002752;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+body.high-contrast .accessibility-bar {
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #ffffff;
+}
+
+.access-btn {
+  background: #ffffff;
+  color: #002752;
+  border: 2px solid transparent;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  min-height: 44px; /* Tamanho mínimo de toque WCAG AAA */
+}
+
+body.high-contrast .access-btn {
+  background: #ffff00;
+  color: #000000;
+}
+
+.primary-btn {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+.success-btn {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   LAYOUT PRINCIPAL E NAVEGAÇÃO
+   ========================================================================== */
+header {
+  background-color: var(--bg-card);
+  padding: 20px;
+  border-bottom: 2px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--text-main);
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.tab-btn.active {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+body.high-contrast .tab-btn.active {
+  color: #000000;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.view-panel {
+  display: none;
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.view-panel.active {
+  display: block;
+}
+
+/* ==========================================================================
+   PAINEL DO DOCENTE (RF01 & RF07)
+   ========================================================================== */
+.upload-zone {
+  border: 3px dashed var(--primary-color);
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  background: rgba(0, 86, 179, 0.05);
+}
+
+.upload-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.editor-box {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 6px;
+  min-height: 200px;
+  background: var(--bg-primary);
+}
+
+.actions-right {
+  margin-top: 20px;
+  text-align: right;
+}
+
+/* ==========================================================================
+   PLAYER DO ALUNO (RF08, RF03, RF05, RF06)
+   ========================================================================== */
+.player-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.content-display {
+  font-size: 1.2rem;
+  padding: 20px;
+  border-left: 6px solid var(--primary-color);
+  background: var(--bg-primary);
+  margin-bottom: 20px;
+}
+
+.libras-modal {
+  display: none;
+  border: 2px solid var(--border-color);
+  background: #000000;
+  color: #ffffff;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.libras-content {
+  text-align: center;
+}
+
+.visual-support-box {
+  margin-top: 20px;
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.diagram-placeholder {
+  background: #e9ecef;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  color: #333333;
+}
