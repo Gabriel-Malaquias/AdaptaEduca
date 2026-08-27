@@ -20,7 +20,15 @@ acessível aos alunos
       docente e a vizualização da aprimoração do material feito com a Inteligência Artificial. Por fim, caso</li>
     </ol>
     <li>Player do Aluno: A segunda sessão da plataforma é mais simples onde contém apenas um campo que permitirá ao aluno 
-      visualizar</li>
+      visualizar o conteúdo aprimorado do docente pela I.A. O aluno terá a disposição algumas ferramentas de usabilidade para
+      inclusão para estudos, como:
+      <ol>
+        <li>Alternar para Linguagem Simples: Permite elaborar uma versão ainda mais simplificada do conteúdo aprimorado</li>
+        <li>Ouvir Áudio Descritivo: Leitura automática de todo o conteúdo presente no site. Ideal para alunos com deficiência visual
+        </li>
+        <li>Exibir Tradução em Libras: Tradução em libras de todo o conteúdo presente no site. Ideial para alunos com deficiência             auditiva</li>
+      </ol>
+    </li>
     <ol>
       <li></li>
     </ol>
