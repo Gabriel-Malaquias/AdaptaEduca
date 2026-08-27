@@ -3,6 +3,10 @@
   <p>
     <strong>Plataforma educacional focada na inclusão e acessibilidade de estudantes com deficiência e necessidades específicas no ensino de tecnologia.</strong>
   </p>
+
+  <p>
+    🌐 <strong><a href="https://gabriel-malaquias.github.io/AdaptaEduca/" target="_blank">Acesse a plataforma online: Adapta Educa</a></strong>
+  </p>
 </div>
 
 <hr />
@@ -10,6 +14,13 @@
 <h2>📖 Sobre o Projeto</h2>
 <p>
   O <strong>Adapta Educa</strong> é uma solução desenvolvida com o propósito de democratizar o ensino de tecnologia. A plataforma permite que docentes enviem seus planejamentos de aula nos mais diversos formatos (como PDF, DOCX, MP4, entre outros) para que sejam aprimorados e adaptados por Inteligência Artificial, gerando conteúdos acessíveis, intuitivos e estruturados para alunos com deficiência ou com algum grau de dificuldade de aprendizagem.
+</p>
+
+<h3>🔗 Link de Acesso</h3>
+<p>
+  A versão de demonstração da interface (front-end) está hospedada e disponível no GitHub Pages através do link:
+  <br />
+  👉 <a href="https://gabriel-malaquias.github.io/AdaptaEduca/" target="_blank">https://gabriel-malaquias.github.io/AdaptaEduca/</a>
 </p>
 
 <hr />
@@ -49,7 +60,7 @@
 
 <h2>⚙️ Arquitetura e Orientações de Execução</h2>
 <p>
-  A infraestrutura de back-end foi desenvolvida utilizando <strong>Spring Boot</strong> e integrada a um banco de dados em memória (<strong>H2 Database</strong>). Como os serviços de hospedagem estática (como o GitHub Pages) comportam apenas a camada de front-end, é necessário realizar um <em>fork</em> ou clone do repositório para execução em ambiente local, garantindo o funcionamento completo de todas as funcionalidades da aplicação.
+  A infraestrutura de back-end foi desenvolvida utilizando <strong>Spring Boot</strong> e integrada a um banco de dados em memória (<strong>H2 Database</strong>). Como os serviços de hospedagem estática (como o GitHub Pages onde o site está publicado) comportam apenas a camada de front-end, é necessário realizar um <em>fork</em> ou clone do repositório para execução em ambiente local, garantindo o funcionamento completo das chamadas de API e demais funcionalidades da aplicação.
 </p>
 
 <h3>🔑 Configuração da API do Google Gemini</h3>
